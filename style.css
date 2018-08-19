@@ -1,0 +1,46 @@
+.flex-container {
+    padding: 10;
+    margin: 10;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    justify-content: space-around;
+    line-height:30px;
+    max-width: 50%;
+    
+}
+.flex-item {
+    margin: 5px;
+    flex: 1 0 auto;
+    height:auto;
+}
+.flex-item:before {
+    content:'';
+    float:left;
+    padding-top:100%;
+    margin: 10;
+}
+
+.flex-container:nth-child(even) .flex-item{
+    background: red;
+}
+
+.flex-container:nth-child(odd) .flex-item{
+    background: blue;
+}
+
+.flex-container:nth-child(even).invert .flex-item{
+    background: blue;
+}
+
+.flex-container:nth-child(odd).invert .flex-item{
+    background: red;
+}
+
+.hidden{
+    display: none;
+}

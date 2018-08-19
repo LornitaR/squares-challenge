@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <title>Grid</title>
+        
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div id='container' class="square-container">
+            <div class="flex-container" onclick="removeRow(this)">
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+            </div>
+            <div class="flex-container" onclick="removeRow(this)">
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+            </div>
+            <div class="flex-container" onclick="removeRow(this)">
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+            </div>
+            
+        </div>
+        <div id="buttonContainer">
+                <div><button id="btnChange" onclick="changeColour()">Change Colour</button></div>
+                <div><button id="btnAdd" onclick="addRow()">Add Row</button></div>
+            </div>
+</body>
+    <link rel="stylesheet" href="style.css">
+</html>
